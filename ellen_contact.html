@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ABOUT</title>
+        <link rel="stylesheet" href="ellen_styles.css">
+    </head>
+
+    <body>
+        <nav class = "container_nav">
+            <a id= "HOME" class="nav-item" href="ellen_home.html">HOME</a>
+            <a id= "ABOUT" class="nav-item" href="ellen_about.html">ABOUT</a>
+            <a id= "PROJECTS" class="nav-item" href="ellen_projects.html">+PROJECTS</a>
+            <a id= "CONTACT" class="nav-item" href="ellen_contact.html">+CONTACT</a>
+        </nav>
+    
+        <form action="https://formspree.io/mknqznvr" method="POST">
+            <!-- your code here -->
+            <div class = "form-item">
+                <label for = "name"> Name </label>
+                <input type = "text" id = "name" name = "name" required>
+            </div>
+
+
+            <div class = "form-item">
+                <label for = "mail">Email</label>
+                <input type = "email" id = "mail" name = "email" required>
+            </div>
+
+            <div class = "form-item">
+                <label for = "message">Message</label>
+                <textarea id = "message" name = "message" required></textarea>
+            </div>
+            <div class="form-item">
+                <button type = "submit">Say Hello</button>
+            </div>
+
+
+        </form>    
+
+    </body>
+</html>
