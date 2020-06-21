@@ -146,7 +146,6 @@ header nav li:last-child{
 
 
 
-
     html body header nav.container_nav li a.nav-item{
         display: flex;
         font-size: 1rem;
@@ -189,15 +188,18 @@ header nav li:last-child{
     }
 
 
+    html body section#about.about-area,
+    html body section#project-area,
+    html body section.contact-area{
+        margin-bottom: 100px;
+    }
+
 
     html body section.contact-area h3.section-title,
     html body section#project-area h3.section-title,
     html body section#about.about-area h3.section-title{
         font-size: 1.5rem; 
 
-    }
-    html body section#about.about-area ul.about-content{
-        margin: 0pt;
     }
 
     html body section#about.about-area ul.about-content{
@@ -228,9 +230,6 @@ section{
     margin-bottom: 300px; 
     flex-basis: 500px;
 }
-
-
-/* Drawing Area */
 
 
 /* .maindrawing-area .  */
@@ -264,6 +263,23 @@ div.home-page-section{
     flex-direction: row;
     justify-items: center;
     align-items: center;
+}
+
+@media (min-width: 1300px){
+/* Drawing Area */
+    html body section#home-page-section{
+        margin-top: 200px;
+        margin-bottom: 300px;
+    }
+
+    html body section#home-page-section div.home-page-content img#homepageimage {
+        display: flex;
+        object-fit:cover;
+        width: 80%;
+        width: 900px;
+    }
+
+
 }
 
 
