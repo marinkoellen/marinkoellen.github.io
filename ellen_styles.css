@@ -24,8 +24,26 @@ a{
   font-weight: bold;
   text-emphasis: emphasis; 
   cursor: pointer;
-  color: grey;
+  background: transparent;
+  outline: none; 
+  transition: all 0.3s ease-in-out;
+
 }
+
+/* Unvisited links */
+nav a:link {
+    color: black;
+  }
+  nav a:visited {
+    color: black;
+  }
+ 
+
+  /* Hover */
+nav a:hover {
+    color: #FFBAB6;
+}  
+
 
 header{
     position: absolute;
@@ -34,24 +52,43 @@ header{
     z-index: 10;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-shrink: 1;
     align-items: center;
     padding: 35px 100px;
 }
 
 header h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     text-transform: uppercase;
     color: black;
     font-size: 3rem; 
-
+    margin-right: 20px;
+    flex-basis: 50%;
+    justify-content: flex-start;
+    flex-shrink: 1;
 }
 
 header nav {
     display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    flex-shrink: 1;  
 }
 header nav li {
     margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+
 }
+
+html body header nav.container_nav{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
 
 header nav li:first-child{
     margin-left:0;
@@ -60,6 +97,12 @@ header nav li:last-child{
     margin-right:0;
 }
 
+
+.BHP {
+    color: rgb(255, 127, 80);
+}
+
+
 @media(max-width:1000px){
     header{
         padding: 20px 50px;
@@ -67,12 +110,13 @@ header nav li:last-child{
 }
 
 
-@media(max-width:700px){
+@media(max-width:950px){
     header{
         flex-direction: column;   
     }
     header h1{
         margin-bottom: 15px;
+        text-align: center;
     }
     header nav li{
         margin: 0, 7px;
@@ -80,84 +124,196 @@ header nav li:last-child{
 }
 
 
-/* Drawing Area */
+@media(max-width:450px){
+    header{
+        flex-direction: column;   
+    }
+    header h1{
+        margin-bottom: 10px;
+    }
+    header nav li{
+        margin: 0, 3px;
+        font-size: 1rem; 
+    }
+
+    html body header nav.container_nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
+        width: 90%;
+    }
+
+
+
+
+    html body header nav.container_nav li a.nav-item{
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        flex-basis: 100%; 
+        justify-content: flex-start;
+
+    }
+    
+
+    html body header h1.main-heading{
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.5rem; 
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    section#home-page-section div.home-page-content div.icons-container{
+        flex-direction: column;
+    }
+
+    html body section#home-page-section div.home-page-content{
+        margin-top: 100px;
+        margin-right: 0px;
+    }
+
+    header nav li{
+        margin: 0;
+    }
+
+    html body header nav.container_nav{
+        align-self: flex-start;
+    }
+    header h1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    html body section.contact-area h3.section-title,
+    html body section#project-area h3.section-title,
+    html body section#about.about-area h3.section-title{
+        font-size: 1.5rem; 
+
+    }
+    html body section#about.about-area ul.about-content{
+        margin: 0pt;
+    }
+
+    html body section#about.about-area ul.about-content{
+        margin: 0px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    html body section#about.about-area ul.about-content li.about-right p{
+        font-size: 0.7rem; 
+
+    }
+    html body section#about.about-area ul.about-content li.about-right h2{
+        font-size: 1rem; 
+ 
+    }
+
+}
+
+
+
+
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 110px 100px;
-}
-
-@media (max-width:1000px){
-    section{
-        padding: 100px 50px;
-    }
+    margin-top: 70px; 
+    margin-bottom: 300px; 
+    flex-basis: 500px;
 }
 
 
-@media (max-width:600px){
-    section{
-        padding: 125px 30px;
-    }
-}
+/* Drawing Area */
 
-section p {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 0 20px;
-    line-height: 2;
-}
 
 /* .maindrawing-area .  */
-
-.maindrawing-area{
+.home-page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     justify-content: center;
-    max-height: 100vh;
     text-align: center;
-    /* padding: 20px; */
-    margin: 40px;
-
 }
 
-.maindrawing-area img {
-    object-fit:cover
+div.home-page-section{
+    flex-basis: 500px;
+}
+
+.home-page-content img {
+    display: flex;
+    object-fit:cover;
+    width: 80%;
+    max-width: 600px;
+}
+
+.home-page-content #homepageimage img {
+    min-width: 300px;
+}
+
+.icons-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
 }
 
 
 @media (max-width:800px){
-    .maindrawing-area{
+    div.home-page-section{
         min-height: 600px; 
     }
 }
+@media (max-width:600px){
+    section #home-page-section{
+        padding: 0px 30px;
+    }
+}
 
+.icons-container .linkednbutton{
+    width: 50px;
+}
+.icons-container h2{
+    color: black;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+}
 
 
 /* .about-me-section .  */
 ul.about-content{
     display: flex;
-    flex-wrap: wrap;
+    flex-basis: 100%;
     justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+
 }
 
 .about-content li {
     padding: 20px;
     height: 300px;
-     /* background-clip: content-box;
-     background-size: cover; */
 }
 
 .about-left{
-    flex-basis: 40%;
-    flex-shrink: 1;
+    flex-basis: 30%;
     display: flex;
-    justify-content: flex-end;
-
+    align-content: flex-end;
 }
 
 .about-right{
-    flex-basis: 60%;
+    flex-basis: 70%;
+    height: 300px;
+
 }
 
 .about-right h2{
@@ -165,12 +321,22 @@ ul.about-content{
 }
 
 .about-btn{
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-width: 2px;
     border-color: black;
     border-style: solid;
-    flex-basis: 100%;
+    color: black;
+    text-decoration: none;  
+    font-size: 0.85rem; 
+    font-weight: none;
+    text-emphasis: none; 
+    border-radius: 25px;
 }
+
+.about-btn:hover {
+    color: #FFBAB6;
+    border-color: #FFBAB6;
+  }
 
 .about-area p {
     max-width: 800px;
@@ -179,6 +345,8 @@ ul.about-content{
     line-height: 2;
     text-align: left;
     padding-left: 0;
+    font-family: 'B612', sans-serif; 
+
 }
 
 .section-title{
@@ -188,158 +356,221 @@ ul.about-content{
 
 }
 
+@media (max-width: 1000px){
+    section ul.about-content{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 50px 25px;
+
+    }
+
+    .about-left{
+        justify-content: center;
+    }
+}
+
+
 @media (max-width: 600px){
     .about-left,
     .about-right{
         flex-basis: 100%;
         justify-content: center;
     }
-    .about-content li {
-        padding: 4px;
+}
+
+
+    #project-area .container {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
     }
-}
+    
+    
+    #project-area.container > div > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    div.project-box_n{
+        margin: 10px;
+    }
+    
 
-/* projects */
+    @media (max-width: 600px){
+        .container > div > img{
+            width: 40%;
+            height: 30%;
+            object-fit: cover;
+        }
+    
+    }
 
-div .project-content{
-    width: 100vh;
-    display: flex;
-    flex-wrap:wrap;
+
+.form-container {
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
+    flex-basis: 100%;
+    height: 100%;
+    width: 80%;
+    max-width: 550px;
+
 }
 
-.project-box_n img{
-    width: 100px;
+ input,textarea {
+   font-size: 1em;
+   padding: 5px 15px 5px 15px;
+   background: transparent;
+   outline: none;
+   color: black;
+   border: solid 1px black;
+   border-bottom: none;
+   font-family: 'B612', sans-serif; 
+   transition: all 0.3s ease-in-out;
+   width: 100%;
+
+}
+
+textarea{
     height: 100px;
 }
 
-
-
-
-
-/* CONTACT FORM */
-
-
-.contact-content{
-    width: 100vh;
-    flex-wrap: wrap;
-    display:flex;
-    justify-content: center;
-}
-
-@media(max-width: 1000px){
-    .contact-content{
-        flex-basis: 100%;
-    }
-}
-
-
-/* FOOTER */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 35px;
-    background-color: darkgrey;
-
-}
-
-
-
-/* .container_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}  */
-
-/* Unvisited links */
-/* .container_nav a:link {
+  #submit {
+    font-size: 1em;
+    padding: 10px 15px 10px 15px;
+    background: transparent;
+    outline:none;
+    cursor: pointer;
     color: black;
-  } */
-  /* Visited links */
-  /* .container_nav a:visited {
-    color: grey;
-  } */
-  /* Hover */
-  /* .container_nav a:hover {
-    color: coral;
-}  */
-
-
-/* 
-.nav-item{
- padding: 10px;  
- text-decoration: none;
- font-size: 1.2rem; 
- font-weight: bold;
- text-emphasis: emphasis;
+    border: none;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;  
+    font-family: 'B612', sans-serif; 
+    transition: all 0.3s ease-in-out;
 }
 
 
-.drawing-container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 60%;
-    max-height: 300px;
-    max-width: 500px;
-    box-sizing: border-box
- }
-
-
-.drawing-container img {
-    object-fit: scale-down;  
+input:hover {
+    color: salmon;
   }
-
- */
-
- 
-
-
-/*  */
-
-/* 
-@media all and (max-width:300px){
-    .container_nav {
-        flex-wrap: wrap;
+  textarea:hover {
+     color:salmon;
+   }
+  
+   #submit:hover {
+     color:#FFBAB6;
+   }
+  
+   textarea {
+      resize: none;
     }
 
-    .container_nav a {
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 50%;
+    html body section.contact-area div.icon-about{
+        display:flex;
+        flex-direction: row;
+        width: 20%;
+        flex-basis: 20%;
+        max-width: 300px;
+        min-width: 100px;
+        margin-top: 30px;
     }
-} */
 
 
-/* div .contact-button{
-    display: flex;
-    border-width: 4px;
-    border-style: solid;
-    border-color: black;
-    align-self: flex-start;
-    padding: 8px;
-    font-size: 1rem;
-    margin-top: 20px;
-} */
+    html body section.contact-area div.icon-about div a img{
+        display: flex;
+        width: 80%;
+        object-fit:cover;
+    }
+
+    html body section.contact-area{
+        display: flex;
+        flex-direction: column;
+    }
+
+    html body section.contact-area div.icon-about div a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        background-color: #FFBAB6;
+        color: white;
+        font-size: 0.7em;
+    }
+
+    footer a {
+        font-size: 0.7em;
+        color: white;
+    }
 
 
+    .row {
+        margin: 8px -16px;
+      }
+      
+      /* Add padding BETWEEN each column (if you want) */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+      
+      /* Create four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+      }
+      
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Content */
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+      section#project-area div img {
+          display: flex;
+          width: 100%;
+          object-fit:cover;
+
+          
+      }
 
 
-/* .container_nav #ABOUT { */
-    /* align-self: flex-end; */
-    /* flex-grow: 0;
-    flex-basis: 200px;
-    flex-shrink: 0; */
+      section#project-area div.row{
+          width: 90%;
+      }
 
-/* } */
-/* .container_nav #HOME { */
-    /* background-color: aquamarine; */
-    /* flex-grow: 0;
-    flex-basis: 200px;
-    flex-shrink: 1; */
-
-/* } */
+      html body section.contact-area{
+          margin-bottom: 100px;
+      }

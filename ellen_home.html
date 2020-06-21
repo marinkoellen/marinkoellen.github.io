@@ -19,9 +19,17 @@
             </nav>
         </header>
 
-        <section class = "maindrawing-area">
-            <img src="104151724_2619739644965316_2273290177107789774_n.jpg" alt="Ellen-sketch.">
-            <a href="#" class = "contact-btn">Linkedin save</a>
+        <section id = home-page-section>
+
+            <div class = 'home-page-content'>
+                <img id = "homepageimage" src="104151724_2619739644965316_2273290177107789774_n.jpg" alt="Ellen-sketch.">
+                
+                <div class = "icons-container">
+                    <a class = "linkednbutton" href="https://www.linkedin.com/in/ellen-marinko"><img src='010-linkedin.png' /></a>
+                    <h3>APPLIED MATHEMATICIAN</h3>
+                </div>
+            
+            </div>
         </section>
 
 
@@ -32,58 +40,82 @@
                     <img src="TEST.PNG" alt="ABOUT-sketch.">
                 </li>
                 <li class = "about-right">
-                <h2>Hello I am a Statistician / Data Scientist at BHP.</h2>
+                <h2>Hello I am an Applied Mathematician at <span class =BHP>BHP</span></h2>
                 <p> Recruited as a Mathematics & Statistics graduate in 2018, I am currently working in the 
                     Operations Research team in BHP’s Technology function in Perth, Western Australia. 
                     In this role, I enjoy researching and designing creative solutions using mathematics, 
                     statistics and machine learning to help address business challenges.
                 </p>
-                <a href="ellen_about.html" class = "about-btn">LEARN MORE</a>
+                <a href="ellen_about.html" class = "about-btn">LEARN MORE..</a>
                 </li>
             </ul>
         </section>
 
-        <section class = "project-area",id="projects">
+        <section id = "project-area">
             <h3 class = "section-title">PORTFOLIO</h3>
-            <div class = "project-content">
-                <img src="" class = "project-box_n"></img>
-                <img src="" class = "project-box_n"></img>
-                <img src="" class = "project-box_n"></img>
-                <img src="" class = "project-box_n"></img>
-                <img src="" class = "project-box_n"></img>
-                <img src="" class = "project-box_n"></img>  
-            </div> 
-
+            
+            
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column">
+                <div class="content">
+                    <img src="projectexample.PNG"></img>
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="projectexample.PNG"></img>
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="projectexample.PNG"></img>
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="projectexample.PNG"></img>
+                </div>
+                </div>
+            </div>
+            
+            
+            
         </section>
 
         <section class = "contact-area",id="contact">
             <h3 class = "section-title">CONTACT</h3>
-            <form action="https://formspree.io/mknqznvr" method="POST">
-                <!-- your code here -->
-                <div class = "form-item">
-                    <label for = "name"> Name </label>
-                    <input type = "text" id = "name" name = "name" required>
-                </div>
-    
-    
-                <div class = "form-item">
-                    <label for = "mail">Email</label>
-                    <input type = "email" id = "mail" name = "email" required>
-                </div>
-    
-                <div class = "form-item">
-                    <label for = "message">Message</label>
-                    <textarea id = "message" name = "message" required></textarea>
-                </div>
-                <div class="form-item">
-                    <button type = "submit">Send!</button>
-                </div>
-            </form>
+
+            <div class = 'form-container'>
+                <form action="https://formspree.io/mknqznvr" method="POST">
+                    <div class = "form-item">
+                        <input type = "text" id = "name" name ="name" placeholder="NAME" >
+                    </div>
+                    <div class = "form-item">
+                        <input type = "email" id = "mail"  name ="mail" placeholder="EMAIL" >
+                    </div>
+                    <div class = "form-item">
+                        <textarea id = "message" placeholder="MESSAGE" ></textarea>
+                    </div>
+                    <div class="form-item">
+                         <input id="submit" type="submit" name = "submit" value="GO!">
+                    </div>
+                </form>
+            </div> 
+
+            <div class = "icon-about">
+                <div><a  href="https://www.linkedin.com/in/ellen-marinko"><img src='010-linkedin.png' /> </a> </div>
+                <div><a  href="https://www.instagram.com/ellenmarinko/?hl=en"><img src='011-instagram.png' /> </a> </div>
+                <div><a  href="https://www.facebook.com/ellen.marinko"><img  src='001-facebook.png' /> </a></div>
+            </div> 
+
 
         </section>
 
-        <footer>All Rights Reserved by Ellen</footer>
-
+        <footer>
+            <p>Ellen Marinko © 2020 </br> </p>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+        </footer>
 
 
 
