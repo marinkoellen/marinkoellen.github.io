@@ -221,7 +221,6 @@ header nav li:last-child{
 
 
 
-
 section{
     display: flex;
     flex-direction: column;
@@ -590,3 +589,9 @@ input:hover {
       html body section.contact-area{
           margin-bottom: 100px;
       }
+
+
+      html body header nav.container_nav li a#HOME.nav-item {
+          color: #FFBAB6;
+      }
+
