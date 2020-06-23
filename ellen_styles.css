@@ -264,6 +264,18 @@ div.home-page-section{
     align-items: center;
 }
 
+html body section#home-page-section div.home-page-content div.icons-container a.linkednbutton img {
+    transition: transform .2s; /* Animation */
+
+}
+
+html body section#home-page-section div.home-page-content div.icons-container a.linkednbutton img:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */  
+}
+
+
+
+
 @media (min-width: 1300px){
 /* Drawing Area */
     html body section#home-page-section{
@@ -323,12 +335,20 @@ ul.about-content{
     flex-basis: 30%;
     display: flex;
     align-content: flex-end;
+    max-width: 340px;
+
+}
+
+html body section#about.about-area ul.about-content li.about-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;  
 }
 
 .about-right{
     flex-basis: 70%;
     height: 300px;
-
 }
 
 .about-right h2{
@@ -388,6 +408,9 @@ ul.about-content{
 
 
 @media (max-width: 600px){
+    html body section#about.about-area ul.about-content {
+        justify-content: center;
+    }
     .about-left,
     .about-right{
         flex-basis: 100%;
@@ -494,6 +517,15 @@ input:hover {
         margin-top: 30px;
     }
 
+    html body section.contact-area div.icon-about div a img {
+        transition: transform .2s; /* Animation */
+
+    }
+
+    html body section.contact-area div.icon-about div a img:hover{
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
 
     html body section.contact-area div.icon-about div a img{
         display: flex;
@@ -594,4 +626,22 @@ input:hover {
       html body header nav.container_nav li a#HOME.nav-item {
           color: #FFBAB6;
       }
+
+
+
+
+      html body section#project-area div.row div.column div.content img {
+        transition: transform .2s; /* Animation */
+    
+    }
+    
+    
+    html body section#project-area div.row div.column div.content img:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+    }
+    
+html body section#project-area a.about-btn {
+    margin: 20px;
+}
 
