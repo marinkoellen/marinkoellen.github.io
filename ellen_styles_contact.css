@@ -181,7 +181,7 @@ header nav li:last-child{
     background-color: #FFBAB6;
     color: white;
     font-size: 0.7em;    
-    margin-top: 100px;
+    margin-top: 40px;
 
 }
 
@@ -300,10 +300,40 @@ html body div#contact-area-container h3 {
     margin: 20px;
 }
 
+
+@media(max-width:700px){
+    html body div#contact-area-container {
+        padding-top: 100px;
+        padding-bottom: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
+
+
+    }
+
+}
+html body div#contact-area-container section.contact-area div{
+    margin-bottom: 20px;
+}
+
+html body div#contact-area-container section.contact-area{
+    max-width: 750px;
+}
+
+
+html body div#contact-area-container section.contact-area div p {
+    margin: 20px;
+}
+
 @media(max-width:550px){
 
     html body div#contact-area-container {
-        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+
     }
 
     html body div#contact-area-container h3{
@@ -334,4 +364,11 @@ input:hover {
   
 #submit:hover {
     color:#FFBAB6;
+}
+
+
+
+html body div#contact-area-container p{
+    font-size: 0.8em;
+    line-height: 20px;
 }

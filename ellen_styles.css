@@ -321,6 +321,7 @@ ul.about-content{
     display: flex;
     flex-basis: 100%;
     justify-content: center;
+    align-items: center;
     margin-left: 30px;
     margin-right: 30px;
 
