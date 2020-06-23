@@ -275,7 +275,7 @@ html body div.contact-section p.about-paragraph {
 }
 
 html body div.contact-section div.overall-about-container {
-    max-width: 1000px;
+    max-width: 1300px;
 }
 
 
@@ -302,10 +302,9 @@ html body div.contact-section div.overall-about-container div.about-me-container
     display: flex;
     flex-basis: 39%;
     width: 39%;
-    max-width: 300px;
+    max-width: 250px;
 
 }
-
 
 
 
@@ -338,6 +337,7 @@ html body div.contact-section div.overall-about-container div.end-photos img {
     display: flex;
     flex-basis: 30%;
     width: 30%;
+    max-width: 300px;
 }
 
 
@@ -408,6 +408,13 @@ html body div.contact-section div.overall-about-container div.end-photos {
     flex-direction: column;
     justify-content: center;
     margin-top: 15px;
+    align-items: center;
+
+}
+
+html body div.contact-section ul.about-content {
+    margin-left: 0px;
+    margin-right: 0px;
 
 }
 
