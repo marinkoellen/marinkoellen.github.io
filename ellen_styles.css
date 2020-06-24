@@ -695,3 +695,14 @@ html body section#project-area a.about-btn {
     animation-duration: 1s;
     animation-timing-function: steps(1, end);
   }
+
+
+
+  @media (max-width:400px){
+    .text_1 {
+        font-size: 0.7em;
+      }
+      .text_2 {
+        font-size: 0.7em;
+    }  
+  }
