@@ -1,190 +1,6 @@
 
-* {
-    border: 1px solid palevioletred;
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'B612', sans-serif; 
-    height: 100vh;
-}
-
-ul,nav{
-    list-style: none;
-}
-
-a{
-  text-decoration: none;  
-  font-size: 1.2rem; 
-  font-weight: bold;
-  text-emphasis: emphasis; 
-  cursor: pointer;
-  background: transparent;
-  outline: none; 
-  transition: all 0.3s ease-in-out;
-
-}
-
-
-html body header nav.container_nav li a#CONTACT.nav-item{
+ a#CONTACT.nav-item{
     color: #FFBAB6;
-}
-
-
-
-/* Unvisited links */
-nav a:link {
-    color: black;
-  }
-  nav a:visited {
-    color: black;
-  }
- 
-
-  /* Hover */
-nav a:hover {
-    color: #FFBAB6;
-}  
-
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    flex-shrink: 1;
-    align-items: center;
-    padding: 35px 100px;
-}
-
-header h1 {
-    display: flex;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: black;
-    font-size: 3rem; 
-    margin-right: 20px;
-    flex-basis: 50%;
-    justify-content: flex-start;
-    flex-shrink: 1;
-}
-
-header nav {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-end;
-    flex-shrink: 1;  
-}
-header nav li {
-    margin: 0 15px;
-    transition: all 0.3s ease-in-out;
-
-}
-
-html body header nav.container_nav{
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-
-
-
-header nav li{
-    margin-left:0;
-}
-
-
-
-@media(max-width:1000px){
-    header{
-        padding: 20px 50px;
-    }
-}
-
-
-@media(max-width:950px){
-    header{
-        flex-direction: column;   
-    }
-    header h1{
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    header nav li{
-        margin: 0, 7px;
-    }
-}
-
-
-@media(max-width:450px){
-    header{
-        flex-direction: column;   
-    }
-    header h1{
-        margin-bottom: 10px;
-    }
-    header nav li{
-        margin: 0, 3px;
-        font-size: 1rem; 
-    }
-
-    html body header nav.container_nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-shrink: 1;
-        width: 90%;
-    }
-
-
-
-    html body header nav.container_nav li a.nav-item{
-        display: flex;
-        font-size: 1rem;
-        flex-direction: column;
-        flex-basis: 100%; 
-        justify-content: flex-start;
-
-    }
-    
-
-    html body header h1.main-heading{
-        display: flex;
-        flex-wrap: wrap;
-        text-transform: uppercase;
-        color: black;
-        font-size: 1.5rem; 
-        justify-content: center;
-        flex-shrink: 1;
-    }
-
-}
-    
-  footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    background-color: #FFBAB6;
-    color: white;
-    font-size: 0.7em;    
-    margin-top: 40px;
-
-}
-
-footer a {
-    font-size: 0.7em;
-    color: white;
 }
 
 
@@ -207,7 +23,6 @@ footer a {
    outline: none;
    color: black;
    border: solid 1px black;
-   border-bottom: none;
    font-family: 'B612', sans-serif; 
    transition: all 0.3s ease-in-out;
    width: 100%;
@@ -234,7 +49,7 @@ textarea{
 }
 
 
-html body div#contact-area-container div.icon-about{
+#contact-area-container div.icon-about{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -246,18 +61,18 @@ html body div#contact-area-container div.icon-about{
 }
 
 
-html body div#contact-area-container div.icon-about div a img{
+#contact-area-container div.icon-about div a img{
     display: flex;
     width: 80%;
     object-fit:cover;
 }
 
-html body div#contact-area-container{
+#contact-area-container{
     display: flex;
     flex-direction: column;
 }
 
-html body div#contact-area-container div.icon-about div a{
+#contact-area-container div.icon-about div a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +80,7 @@ html body div#contact-area-container div.icon-about div a{
 
 
 
-html body div#contact-area-container {
+#contact-area-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -276,14 +91,14 @@ html body div#contact-area-container {
 }
 
 
-html body div#contact-area-container div {
+#contact-area-container div {
     display: flex;
     align-self: center;
     flex-basis: 30%;
     flex-direction: column;
 }
 
-html body div#contact-area-container section.contact-area{
+#contact-area-container section.contact-area{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,69 +106,70 @@ html body div#contact-area-container section.contact-area{
 }
 
 
-html body div#contact-area-container section.contact-area div.form-container form{
+#contact-area-container section.contact-area div.form-container form{
     width: 100%;
     max-width: 500px;
 }
 
-html body div#contact-area-container h3 {
+#contact-area-container h3 {
     margin: 20px;
 }
 
 
 @media(max-width:700px){
-    html body div#contact-area-container {
+    #contact-area-container {
         flex-direction: column;
         padding-top: 100px;
         padding-bottom: 70px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
 
 
     }
 
 }
-html body div#contact-area-container section.contact-area div{
+
+
+.contact-area{
+    max-width: 750px;
+}
+.contact-area div{
     margin-bottom: 20px;
 }
 
-html body div#contact-area-container section.contact-area{
-    max-width: 750px;
-}
-
-
-html body div#contact-area-container section.contact-area div p {
+.contact-area div p {
     margin: 20px;
 }
 
 @media(max-width:550px){
 
-    html body div#contact-area-container {
+
+    #contact-area-container {
         padding-top: 100px;
         padding-bottom: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
 
 
     }
 
-    html body div#contact-area-container div h3{
+    #contact-area-container div h3{
         padding-top: 40px;
         padding-bottom:20px;
     }
 }
 
-
-html body div#contact-area-container div div.icon-about div a img {
-    transition: transform .2s; /* Animation */
-
+#contact-area-container div div.icon-about {
+    margin-bottom: 20px;
 }
 
-html body div#contact-area-container div div.icon-about div a img:hover {
-    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+#contact-area-container div div.icon-about div a img {
+    transition: transform .2s; 
 }
 
-
+#contact-area-container div div.icon-about div a img:hover {
+    transform: scale(1.3); 
+}
 
 input:hover {
     color: salmon;
@@ -367,8 +183,7 @@ input:hover {
 }
 
 
-
-html body div#contact-area-container div p{
+#contact-area-container div p{
     font-size: 0.8em;
     line-height: 20px;
     margin-top: 20px;

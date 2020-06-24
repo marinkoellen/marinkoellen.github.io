@@ -1,225 +1,6 @@
-
-* {
-    border: 1px solid palevioletred;
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'B612', sans-serif; 
-}
-
-ul,nav{
-    list-style: none;
-}
-
-a{
-  text-decoration: none;  
-  font-size: 1.2rem; 
-  font-weight: bold;
-  text-emphasis: emphasis; 
-  cursor: pointer;
-  background: transparent;
-  outline: none; 
-  transition: all 0.3s ease-in-out;
-
-}
-
-/* Unvisited links */
-nav a:link {
-    color: black;
-  }
-  nav a:visited {
-    color: black;
-  }
- 
-
-  /* Hover */
-nav a:hover {
+html body header nav.container_nav li a#HOME.nav-item {
     color: #FFBAB6;
-}  
-
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    flex-shrink: 1;
-    align-items: center;
-    padding: 35px 100px;
 }
-
-header h1 {
-    display: flex;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: black;
-    font-size: 3rem; 
-    margin-right: 20px;
-    flex-basis: 50%;
-    justify-content: flex-start;
-    flex-shrink: 1;
-}
-
-header nav {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: flex-end;
-    flex-shrink: 1;  
-}
-header nav li {
-    margin: 0 15px;
-    transition: all 0.3s ease-in-out;
-
-}
-
-html body header nav.container_nav{
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-
-
-
-header nav li:first-child{
-    margin-left:0;
-}
-header nav li:last-child{
-    margin-right:0;
-}
-
-
-.BHP {
-    color: rgb(255, 127, 80);
-}
-
-
-@media(max-width:1000px){
-    header{
-        padding: 20px 50px;
-    }
-}
-
-
-@media(max-width:950px){
-    header{
-        flex-direction: column;   
-    }
-    header h1{
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    header nav li{
-        margin: 0, 7px;
-    }
-}
-
-
-@media(max-width:450px){
-    header{
-        flex-direction: column;   
-    }
-    header h1{
-        margin-bottom: 10px;
-    }
-    header nav li{
-        margin: 0, 3px;
-        font-size: 1rem; 
-    }
-
-    html body header nav.container_nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-shrink: 1;
-        width: 90%;
-    }
-
-
-
-    html body header nav.container_nav li a.nav-item{
-        display: flex;
-        font-size: 1rem;
-        flex-direction: column;
-        flex-basis: 100%; 
-        justify-content: flex-start;
-
-    }
-    
-
-    html body header h1.main-heading{
-        display: flex;
-        flex-wrap: wrap;
-        text-transform: uppercase;
-        color: black;
-        font-size: 1.5rem; 
-        justify-content: center;
-        flex-shrink: 1;
-    }
-
-    section#home-page-section div.home-page-content div.icons-container{
-        flex-direction: column;
-    }
-
-    html body section#home-page-section div.home-page-content{
-        margin-top: 100px;
-        margin-right: 0px;
-    }
-
-    header nav li{
-        margin: 0;
-    }
-
-    html body header nav.container_nav{
-        align-self: flex-start;
-    }
-    header h1 {
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    html body section#about.about-area,
-    html body section#project-area,
-    html body section.contact-area{
-        margin-bottom: 100px;
-    }
-
-
-    html body section.contact-area h3.section-title,
-    html body section#project-area h3.section-title,
-    html body section#about.about-area h3.section-title{
-        font-size: 1.5rem; 
-
-    }
-
-    html body section#about.about-area ul.about-content{
-        margin: 0px;
-        width: 90%;
-        padding: 10px;
-    }
-
-    html body section#about.about-area ul.about-content li.about-right p{
-        font-size: 0.7rem; 
-
-    }
-    html body section#about.about-area ul.about-content li.about-right h2{
-        font-size: 1rem; 
- 
-    }
-
-}
-
-
 
 section{
     display: flex;
@@ -229,6 +10,7 @@ section{
     margin-bottom: 300px; 
     flex-basis: 500px;
 }
+
 
 
 /* .maindrawing-area .  */
@@ -264,26 +46,81 @@ div.home-page-section{
     align-items: center;
 }
 
-html body section#home-page-section div.home-page-content div.icons-container a.linkednbutton img {
-    transition: transform .2s; /* Animation */
+ a.linkednbutton img {
+    transition: transform .2s; 
 
 }
 
-html body section#home-page-section div.home-page-content div.icons-container a.linkednbutton img:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */  
+ a.linkednbutton img:hover {
+    transform: scale(1.5); 
 }
 
+/* .maindrawing-area .  */
 
+
+@media(max-width:450px){
+
+    header h1.main-heading{
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.5rem; 
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .home-page-content div.icons-container{
+        flex-direction: column;
+    }
+
+    div.home-page-content{
+        margin-top: 100px;
+        margin-right: 0px;
+    }
+
+
+    header h1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #about.about-area,
+    #project-area,
+    section.contact-area{
+        margin-bottom: 100px;
+    }
+
+
+    h3.section-title{
+        font-size: 1.5rem; 
+    }
+
+     ul.about-content{
+        margin: 0px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .about-content li.about-right p{
+        font-size: 0.7rem; 
+
+    }
+    .about-content li.about-right h2{
+        font-size: 1rem; 
+    }
+
+}
 
 
 @media (min-width: 1300px){
-/* Drawing Area */
-    html body section#home-page-section{
+    #home-page-section{
         margin-top: 200px;
         margin-bottom: 300px;
     }
 
-    html body section#home-page-section div.home-page-content img#homepageimage {
+    img#homepageimage {
         display: flex;
         object-fit:cover;
         width: 80%;
@@ -292,7 +129,6 @@ html body section#home-page-section div.home-page-content div.icons-container a.
 
 
 }
-
 
 @media (max-width:800px){
     div.home-page-section{
@@ -340,7 +176,7 @@ ul.about-content{
 
 }
 
-html body section#about.about-area ul.about-content li.about-left img {
+.about-content li.about-left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -409,7 +245,7 @@ html body section#about.about-area ul.about-content li.about-left img {
 
 
 @media (max-width: 600px){
-    html body section#about.about-area ul.about-content {
+    .about-area ul.about-content {
         justify-content: center;
     }
     .about-left,
@@ -508,7 +344,7 @@ input:hover {
       resize: none;
     }
 
-    html body section.contact-area div.icon-about{
+    .contact-area div.icon-about{
         display:flex;
         flex-direction: row;
         width: 20%;
@@ -518,20 +354,23 @@ input:hover {
         margin-top: 30px;
     }
 
-    html body section.contact-area div.icon-about div a img {
-        transition: transform .2s; /* Animation */
-
+    .icon-about div a img {
+        transition: transform .2s; 
     }
 
-    html body section.contact-area div.icon-about div a img:hover{
-        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    div.icon-about div a img:hover{
+        transform: scale(1.3); 
     }
 
-
-    html body section.contact-area div.icon-about div a img{
+    .contact-area div.icon-about div a img{
         display: flex;
         width: 80%;
         object-fit:cover;
+    }
+    .contact-area div.icon-about div a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     html body section.contact-area{
@@ -539,41 +378,19 @@ input:hover {
         flex-direction: column;
     }
 
-    html body section.contact-area div.icon-about div a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 5px;
-        background-color: #FFBAB6;
-        color: white;
-        font-size: 0.7em;
-    }
-
-    footer a {
-        font-size: 0.7em;
-        color: white;
-    }
 
 
     .row {
         margin: 8px -16px;
       }
       
-      /* Add padding BETWEEN each column (if you want) */
+      /* Add padding between each column */
       .row,
       .row > .column {
         padding: 8px;
       }
       
-      /* Create four equal columns that floats next to each other */
+      /* Create four equal columns that float*/
       .column {
         float: left;
         width: 25%;
@@ -586,20 +403,15 @@ input:hover {
         clear: both;
       }
       
-      /* Content */
-      .content {
-        background-color: white;
-        padding: 10px;
-      }
       
-      /* Responsive layout - makes a two column-layout instead of four columns */
+      /* makes a two column-layout instead of four columns */
       @media screen and (max-width: 900px) {
         .column {
           width: 50%;
         }
       }
       
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      /* makes the two columns stack on top of each other */
       @media screen and (max-width: 600px) {
         .column {
           width: 100%;
@@ -610,8 +422,6 @@ input:hover {
           display: flex;
           width: 100%;
           object-fit:cover;
-
-          
       }
 
 
@@ -624,85 +434,17 @@ input:hover {
       }
 
 
-      html body header nav.container_nav li a#HOME.nav-item {
-          color: #FFBAB6;
-      }
+      #project-area div.row div.column div.content img {
+        transition: transform .2s; 
+    
+    }
 
-
-
-
-      html body section#project-area div.row div.column div.content img {
-        transition: transform .2s; /* Animation */
+    #project-area div.row div.column div.content img:hover {
+        transform: scale(1.2); 
     
     }
     
-    
-    html body section#project-area div.row div.column div.content img:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    
-    }
-    
-html body section#project-area a.about-btn {
+#project-area a.about-btn {
     margin: 20px;
 }
 
-
-
-
-@keyframes text2 {
-    0%, 50%, 100% {
-      width: 0;
-    }
-    
-    60%, 90% {
-      /* width: 6.2em; */
-      width: 7.8em;
-
-    }
-  }
-  @keyframes text1 {
-    0%, 50%, 100% {
-      width: 0;
-    }
-    10%, 40% {
-      /* width: 10.35em; */
-      width: 11.4em;
-
-    }
-  }
-
-
-  .text_1 {
-    animation: text1;
-  }
-  .text_2 {
-    animation: text2;
-  }
-  .text_1, .text_2 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation-duration: 18s;
-    animation-timing-function: steps(25, end);
-    animation-iteration-count: infinite;
-  }
-  .text_1::after, .text_2::after {
-    content: "|";
-    position: absolute;
-    right: 0;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(1, end);
-  }
-
-
-
-  @media (max-width:400px){
-    .text_1 {
-        font-size: 0.7em;
-      }
-      .text_2 {
-        font-size: 0.7em;
-    }  
-  }
