@@ -37,7 +37,7 @@ ul.about-content{
     justify-content: center;
 }
 
-.about-left{
+.about-left {
     flex-basis: 40%;
     display: flex;
     align-content: flex-end;
@@ -46,15 +46,17 @@ ul.about-content{
 
 }
 
+
 .contact-section ul.about-content li.about-left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;  
+    min-width: 200px;
 }
 
 .about-right{
-    flex-basis: 60%;
+    flex-basis: 90%;
     height: 300px;
 
 }
@@ -77,7 +79,7 @@ div.contact-section p.about-paragraph {
 }
 
 
-.contact-section ul.about-content li.about-right h5 {
+.contact-section ul.about-content li.about-right h2 {
     padding-bottom: 10px;
 }
 
@@ -191,32 +193,34 @@ div.contact-section p.about-paragraph {
 
 }
 
-
-@media (max-width: 400px){
-.overall-about-container div.end-photos {
-    display: flex;
-    flex-basis: 100%;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 15px;
-    align-items: center;
-
-}
-
-.overall-about-container div.end-photos img {
-    display: flex;
-    flex-basis: 70%;
-    width: 70%;
-}
-
-ul.about-content {
-    margin-left: 0px;
-    margin-right: 0px;
-
-}
-
+@media (max-width: 550px){
+    .overall-about-container div.end-photos {
+        display: flex;
+        flex-basis: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+        align-items: center;
+    
+    }
+    
+    .overall-about-container div.end-photos img {
+        display: flex;
+        flex-basis: 60%;
+        width: 60%;
+    }
 
 
 }
 
+
+.about-me-container-1 p.about-paragraph{
+font-family: 'Roboto', monospace;
+}
+
+
+.about-content li.about-right h3 {
+    font-family: 'Roboto', sans-serif;
+
+}

@@ -188,3 +188,8 @@ input:hover {
     line-height: 20px;
     margin-top: 20px;
 }
+
+html body div#contact-area-container div p {
+    font-family: 'Roboto', monospace;
+
+}

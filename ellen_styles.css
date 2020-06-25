@@ -234,6 +234,7 @@ ul.about-content{
         flex-direction: column;
         flex-basis: 100%;
         justify-content: center;
+        align-items: center;
         padding: 50px 25px;
 
     }
@@ -436,6 +437,8 @@ input:hover {
 
       #project-area div.row div.column div.content img {
         transition: transform .2s; 
+            border: 1px solid black;
+
     
     }
 
@@ -448,3 +451,6 @@ input:hover {
     margin: 20px;
 }
 
+html body section#about.about-area ul.about-content li.about-right p {
+    font-family: 'Roboto', monospace;
+}
