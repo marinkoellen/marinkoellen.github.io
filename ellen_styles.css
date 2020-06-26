@@ -454,3 +454,7 @@ input:hover {
 html body section#about.about-area ul.about-content li.about-right p {
     font-family: 'Roboto', monospace;
 }
+
+html body section.contact-area div#back_to_top {
+    margin: 20px;
+  }

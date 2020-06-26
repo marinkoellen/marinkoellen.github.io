@@ -169,9 +169,6 @@ section{
 
 
 
-
-
-
 .mask {
     position:relative;
     box-shadow:0 0 1px #000;
@@ -206,4 +203,5 @@ font-family: 'Roboto', monospace;
 
 .mask:hover .caption {  
     opacity: 0.7;  
-}  
+} 
+
